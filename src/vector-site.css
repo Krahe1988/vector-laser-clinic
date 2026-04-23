@@ -11,7 +11,6 @@
   --gold-dark: #b88157;
   --gold-soft: #ddb38f;
   --dark: #1d1a18;
-  --dark-2: #26211f;
   --shadow: 0 20px 60px rgba(191, 154, 120, 0.14);
   --shadow-soft: 0 10px 30px rgba(191, 154, 120, 0.08);
   --radius-xl: 32px;
@@ -98,12 +97,14 @@ textarea {
   opacity: 1;
   color: var(--gold);
 }
+
 .header-logo-image-wrap {
   display: flex;
   align-items: center;
   text-decoration: none;
   max-width: 180px;
   overflow: hidden;
+  flex: 0 0 auto;
 }
 
 .header-logo-image {
@@ -1051,6 +1052,7 @@ textarea {
   font-size: 11px;
 }
 
+/* Tablet */
 @media (max-width: 1120px) {
   .hero-grid,
   .rental-grid,
@@ -1069,69 +1071,14 @@ textarea {
   }
 }
 
-@media (max-width: 900px) {
-  .site-nav {
-    display: none;
-  }
-}
-
-  .feature-grid,
-  .stats-grid,
-  .premium-points,
-  .brand-info-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .container {
-    width: min(var(--container), calc(100% - 28px));
-  }
-
-  .feature-section,
-  .equipment-section,
-  .rental-section,
-  .cta-section,
-  .contact-section {
-    padding: 70px 0;
-  }
-
-  .header-inner {
-    min-height: 78px;
-  }
-
-  .brand-title {
-    font-size: 30px;
-  }
-
-  .hero-copy p,
-  .section-text,
-  .cta-box p,
-  .contact-grid > div > p {
-    font-size: 15px;
-  }
-
-  .equipment-text h3 {
-    font-size: 34px;
-  }
-
-  .premium-box h3 {
-    font-size: 34px;
-  }
-
-  .device,
-  .hero-symbol {
-    transform: scale(0.92);
-    transform-origin: center;
-  }
-
-
+/* Mobile */
 @media (max-width: 640px) {
   .container {
     width: calc(100% - 24px);
   }
-}
-  .site-header {
-    position: sticky;
-    top: 0;
+
+  .site-nav {
+    display: none;
   }
 
   .header-inner {
@@ -1142,55 +1089,34 @@ textarea {
 
   .header-logo-image-wrap {
     max-width: 110px;
-    flex: 0 0 auto;
   }
 
   .header-logo-image {
-    height: 34px;
+    height: 30px;
     max-width: 110px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-  }
-
-  .site-nav {
-    display: none;
-  }
-
-  .btn {
-    min-height: 44px;
-    padding: 0 16px;
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    border-radius: 999px;
   }
 
   .header-inner .btn {
-    width: auto;
-    min-width: 160px;
-    padding: 0 18px;
-    flex: 0 0 auto;
+    min-width: 140px;
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
   }
 
   .hero-section {
-    padding: 34px 0 30px;
+    padding: 30px 0 28px;
   }
 
   .hero-grid {
-    gap: 26px;
-  }
-
-  .eyebrow {
-    font-size: 10px;
-    letter-spacing: 0.28em;
-    line-height: 1.7;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .hero-copy h1 {
     font-size: 24px;
-    line-height: 1.08;
+    line-height: 1.1;
     max-width: 100%;
-    margin-top: 10px;
   }
 
   .hero-copy p,
@@ -1198,8 +1124,7 @@ textarea {
   .cta-box p,
   .contact-grid > div > p {
     font-size: 15px;
-    line-height: 1.9;
-    margin-top: 16px;
+    line-height: 1.85;
   }
 
   .hero-actions {
@@ -1209,14 +1134,27 @@ textarea {
     margin-top: 24px;
   }
 
-  .hero-actions .btn {
+  .hero-actions .btn,
+  .cta-action .btn,
+  .btn-full {
     width: 100%;
   }
 
-  .stats-grid {
+  .stats-grid,
+  .feature-grid,
+  .brand-info-grid,
+  .premium-points,
+  .contact-grid,
+  .rental-grid,
+  .cta-box,
+  .equipment-card,
+  .hero-brand-grid {
     grid-template-columns: 1fr;
-    gap: 12px;
+  }
+
+  .stats-grid {
     margin-top: 22px;
+    gap: 12px;
   }
 
   .stat-card {
@@ -1227,71 +1165,45 @@ textarea {
     font-size: 28px;
   }
 
-  .stat-card span {
-    font-size: 14px;
-  }
-
-  .hero-brand-grid {
-    grid-template-columns: 1fr;
-    padding: 14px;
-    gap: 14px;
-  }
-
   .logo-clean-card,
-  .brand-dark-card {
-    padding: 16px;
+  .brand-dark-card,
+  .feature-card,
+  .equipment-card,
+  .premium-box,
+  .cta-box,
+  .contact-form,
+  .hero-brand-grid {
+    padding: 18px;
   }
 
   .logo-stage {
-    min-height: 190px;
-    border-radius: 18px;
+    min-height: 180px;
   }
 
   .hero-symbol {
-    width: 130px;
-    height: 130px;
-  }
-
-  .brand-horizontal {
-    gap: 12px;
-    align-items: flex-start;
+    width: 120px;
+    height: 120px;
   }
 
   .brand-horizontal-mark {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
   }
 
   .brand-title {
-    font-size: 20px;
-    letter-spacing: 0.14em;
+    font-size: 18px;
+    letter-spacing: 0.1em;
   }
 
   .brand-subtitle {
-    font-size: 9px;
-    letter-spacing: 0.22em;
+    font-size: 8px;
+    letter-spacing: 0.18em;
   }
 
   .brand-tagline {
-    font-size: 8px;
-    letter-spacing: 0.16em;
-    margin-top: 8px;
-    line-height: 1.6;
-  }
-
-  .brand-info-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 16px;
-  }
-
-  .brand-info-box {
-    padding: 12px;
-  }
-
-  .brand-info-box p {
-    font-size: 13px;
-    line-height: 1.7;
+    font-size: 7px;
+    letter-spacing: 0.12em;
+    line-height: 1.5;
   }
 
   .feature-section,
@@ -1307,36 +1219,11 @@ textarea {
   .cta-box h2,
   .contact-grid h2 {
     font-size: 26px;
-    line-height: 1.12;
-  }
-
-  .feature-grid,
-  .premium-points,
-  .contact-grid,
-  .rental-grid,
-  .cta-box,
-  .equipment-card {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-card,
-  .equipment-card,
-  .premium-box,
-  .contact-form,
-  .cta-box {
-    padding: 18px;
+    line-height: 1.14;
   }
 
   .feature-card h3 {
     font-size: 24px;
-  }
-
-  .feature-card p,
-  .equipment-text li p,
-  .step-card p,
-  .premium-points div {
-    font-size: 14px;
-    line-height: 1.8;
   }
 
   .equipment-text h3 {
@@ -1345,62 +1232,61 @@ textarea {
 
   .equipment-subtitle {
     font-size: 15px;
-    line-height: 1.8;
   }
 
   .equipment-visual {
-    min-height: 300px;
+    min-height: 280px;
     padding: 10px;
   }
 
   .device {
-    width: 200px;
-    height: 330px;
+    width: 190px;
+    height: 310px;
   }
 
   .u-head {
-    width: 78px;
-    height: 44px;
+    width: 74px;
+    height: 42px;
   }
 
   .u-screen {
-    width: 48px;
-    height: 20px;
+    width: 44px;
+    height: 18px;
   }
 
   .u-neck {
-    top: 45px;
-    height: 28px;
+    top: 44px;
+    height: 24px;
   }
 
   .u-neck.left {
-    left: 62px;
+    left: 60px;
   }
 
   .u-neck.right {
-    right: 62px;
+    right: 60px;
   }
 
   .u-body {
-    top: 70px;
-    width: 126px;
-    height: 160px;
+    top: 66px;
+    width: 120px;
+    height: 150px;
   }
 
   .u-center {
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
   }
 
   .u-arm {
-    width: 20px;
-    height: 90px;
+    width: 18px;
+    height: 84px;
   }
 
   .u-side {
-    top: 104px;
-    width: 36px;
-    height: 104px;
+    top: 96px;
+    width: 32px;
+    height: 96px;
   }
 
   .u-side.left {
@@ -1412,111 +1298,109 @@ textarea {
   }
 
   .u-leg {
-    height: 62px;
-    bottom: 34px;
+    height: 56px;
+    bottom: 30px;
   }
 
   .u-leg.left {
-    left: 44px;
+    left: 42px;
   }
 
   .u-leg.right {
-    right: 44px;
+    right: 42px;
   }
 
   .u-wheel {
-    width: 44px;
-    bottom: 18px;
+    width: 40px;
+    bottom: 16px;
   }
 
   .u-wheel.left {
-    left: 30px;
+    left: 28px;
   }
 
   .u-wheel.right {
-    right: 30px;
+    right: 28px;
   }
 
   .l-arm {
-    right: 34px;
-    height: 118px;
+    right: 32px;
+    height: 110px;
   }
 
   .l-head {
-    right: 50px;
-    top: 58px;
-    width: 54px;
-    height: 54px;
+    right: 46px;
+    top: 54px;
+    width: 50px;
+    height: 50px;
   }
 
   .l-head-screen {
-    width: 30px;
-    height: 24px;
-    top: 12px;
+    width: 28px;
+    height: 22px;
+    top: 11px;
   }
 
   .l-body {
-    top: 102px;
-    width: 104px;
-    height: 168px;
+    top: 96px;
+    width: 98px;
+    height: 156px;
   }
 
   .l-screen-box {
-    top: 124px;
-    width: 70px;
-    height: 70px;
+    top: 116px;
+    width: 66px;
+    height: 66px;
   }
 
   .l-screen {
-    width: 34px;
-    height: 28px;
-    top: 16px;
+    width: 30px;
+    height: 24px;
+    top: 15px;
   }
 
   .l-hose {
-    top: 146px;
+    top: 138px;
     height: 8px;
   }
 
+  .l-hose.left,
+  .l-hose.right {
+    width: 58px;
+  }
+
   .l-hose.left {
-    left: 34px;
-    width: 64px;
+    left: 32px;
   }
 
   .l-hose.right {
-    right: 34px;
-    width: 62px;
+    right: 32px;
   }
 
   .l-leg {
-    height: 62px;
-    bottom: 34px;
+    height: 56px;
+    bottom: 30px;
   }
 
   .l-leg.left {
-    left: 66px;
+    left: 62px;
   }
 
   .l-leg.right {
-    right: 66px;
+    right: 62px;
   }
 
   .l-wheel {
-    width: 40px;
-    bottom: 20px;
+    width: 36px;
+    bottom: 18px;
   }
 
   .l-wheel.left {
-    left: 50px;
+    left: 48px;
   }
 
   .l-wheel.right {
-    right: 50px;
-  }
-
-  .steps-list,
-  .contact-list {
-    gap: 12px;
+    right: 48px;
   }
 
   .step-card,
@@ -1532,27 +1416,6 @@ textarea {
 
   .premium-box h3 {
     font-size: 28px;
-    line-height: 1.1;
-  }
-
-  .premium-points {
-    gap: 10px;
-  }
-
-  .cta-action {
-    justify-content: stretch;
-  }
-
-  .cta-action .btn {
-    width: 100%;
-  }
-
-  .contact-form {
-    gap: 14px;
-  }
-
-  .contact-form span {
-    font-size: 11px;
   }
 
   .contact-form input,
@@ -1573,3 +1436,4 @@ textarea {
     font-size: 9px;
     letter-spacing: 0.18em;
   }
+}

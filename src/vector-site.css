@@ -98,6 +98,21 @@ textarea {
   opacity: 1;
   color: var(--gold);
 }
+.header-logo-image-wrap {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  max-width: 180px;
+  overflow: hidden;
+}
+
+.header-logo-image {
+  height: 42px;
+  max-width: 160px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
 
 .brand-inline,
 .brand-horizontal {
@@ -1058,6 +1073,7 @@ textarea {
   .site-nav {
     display: none;
   }
+}
 
   .feature-grid,
   .stats-grid,
@@ -1112,7 +1128,7 @@ textarea {
   .container {
     width: calc(100% - 24px);
   }
-
+}
   .site-header {
     position: sticky;
     top: 0;
@@ -1557,21 +1573,3 @@ textarea {
     font-size: 9px;
     letter-spacing: 0.18em;
   }
-}
-  .header-logo-image-wrap {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.header-logo-image {
-  height: 42px;
-  max-width: 160px;
-  width: auto;
-  object-fit: contain;
-}
-.header-logo-image-wrap {
-  max-width: 180px;
-  overflow: hidden;
-}
-}

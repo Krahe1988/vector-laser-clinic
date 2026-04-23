@@ -1106,86 +1106,443 @@ textarea {
     transform: scale(0.92);
     transform-origin: center;
   }
-}
+
 
 @media (max-width: 640px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+  }
+
+  .header-inner {
+    min-height: 72px;
+    gap: 12px;
+    padding: 8px 0;
+  }
+
+  .header-logo-image-wrap {
+    max-width: 110px;
+    flex: 0 0 auto;
+  }
+
+  .header-logo-image {
+    height: 34px;
+    max-width: 110px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
   .btn {
-    width: 100%;
+    min-height: 44px;
+    padding: 0 16px;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    border-radius: 999px;
+  }
+
+  .header-inner .btn {
+    width: auto;
+    min-width: 160px;
+    padding: 0 18px;
+    flex: 0 0 auto;
+  }
+
+  .hero-section {
+    padding: 34px 0 30px;
+  }
+
+  .hero-grid {
+    gap: 26px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    line-height: 1.7;
+  }
+
+  .hero-copy h1 {
+    font-size: 24px;
+    line-height: 1.08;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .hero-copy p,
+  .section-text,
+  .cta-box p,
+  .contact-grid > div > p {
+    font-size: 15px;
+    line-height: 1.9;
+    margin-top: 16px;
   }
 
   .hero-actions {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 24px;
   }
 
-  .brand-inline-mark {
-    width: 48px;
-    height: 48px;
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .stat-card {
+    padding: 18px 16px;
+  }
+
+  .stat-card strong {
+    font-size: 28px;
+  }
+
+  .stat-card span {
+    font-size: 14px;
+  }
+
+  .hero-brand-grid {
+    grid-template-columns: 1fr;
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .logo-clean-card,
+  .brand-dark-card {
+    padding: 16px;
+  }
+
+  .logo-stage {
+    min-height: 190px;
+    border-radius: 18px;
+  }
+
+  .hero-symbol {
+    width: 130px;
+    height: 130px;
+  }
+
+  .brand-horizontal {
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .brand-horizontal-mark {
+    width: 56px;
+    height: 56px;
   }
 
   .brand-title {
-    font-size: 25px;
-    letter-spacing: 0.18em;
+    font-size: 20px;
+    letter-spacing: 0.14em;
   }
 
   .brand-subtitle {
-    letter-spacing: 0.28em;
-    font-size: 11px;
+    font-size: 9px;
+    letter-spacing: 0.22em;
   }
 
-  .hero-copy h1,
+  .brand-tagline {
+    font-size: 8px;
+    letter-spacing: 0.16em;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+
+  .brand-info-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .brand-info-box {
+    padding: 12px;
+  }
+
+  .brand-info-box p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .feature-section,
+  .equipment-section,
+  .rental-section,
+  .cta-section,
+  .contact-section {
+    padding: 52px 0;
+  }
+
   .section-heading h2,
   .rental-grid h2,
   .cta-box h2,
   .contact-grid h2 {
-    font-size: 30px;
+    font-size: 26px;
+    line-height: 1.12;
   }
 
-  .logo-stage {
-    min-height: 240px;
+  .feature-grid,
+  .premium-points,
+  .contact-grid,
+  .rental-grid,
+  .cta-box,
+  .equipment-card {
+    grid-template-columns: 1fr;
   }
 
-  .hero-symbol {
-    width: 170px;
-    height: 170px;
-  }
-
+  .feature-card,
   .equipment-card,
   .premium-box,
   .contact-form,
-  .cta-box,
-  .feature-card,
-  .hero-brand-grid {
-    padding-left: 20px;
-    padding-right: 20px;
+  .cta-box {
+    padding: 18px;
+  }
+
+  .feature-card h3 {
+    font-size: 24px;
+  }
+
+  .feature-card p,
+  .equipment-text li p,
+  .step-card p,
+  .premium-points div {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .equipment-text h3 {
+    font-size: 30px;
+  }
+
+  .equipment-subtitle {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .equipment-visual {
+    min-height: 300px;
+    padding: 10px;
   }
 
   .device {
-    width: 240px;
-    height: 390px;
+    width: 200px;
+    height: 330px;
   }
 
   .u-head {
-    width: 90px;
+    width: 78px;
+    height: 44px;
+  }
+
+  .u-screen {
+    width: 48px;
+    height: 20px;
+  }
+
+  .u-neck {
+    top: 45px;
+    height: 28px;
+  }
+
+  .u-neck.left {
+    left: 62px;
+  }
+
+  .u-neck.right {
+    right: 62px;
   }
 
   .u-body {
-    width: 154px;
-    height: 196px;
+    top: 70px;
+    width: 126px;
+    height: 160px;
+  }
+
+  .u-center {
+    width: 50px;
+    height: 50px;
+  }
+
+  .u-arm {
+    width: 20px;
+    height: 90px;
   }
 
   .u-side {
-    height: 122px;
+    top: 104px;
+    width: 36px;
+    height: 104px;
+  }
+
+  .u-side.left {
+    left: 6px;
+  }
+
+  .u-side.right {
+    right: 6px;
+  }
+
+  .u-leg {
+    height: 62px;
+    bottom: 34px;
+  }
+
+  .u-leg.left {
+    left: 44px;
+  }
+
+  .u-leg.right {
+    right: 44px;
+  }
+
+  .u-wheel {
+    width: 44px;
+    bottom: 18px;
+  }
+
+  .u-wheel.left {
+    left: 30px;
+  }
+
+  .u-wheel.right {
+    right: 30px;
+  }
+
+  .l-arm {
+    right: 34px;
+    height: 118px;
+  }
+
+  .l-head {
+    right: 50px;
+    top: 58px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .l-head-screen {
+    width: 30px;
+    height: 24px;
+    top: 12px;
   }
 
   .l-body {
-    width: 122px;
-    height: 198px;
+    top: 102px;
+    width: 104px;
+    height: 168px;
   }
 
   .l-screen-box {
-    width: 84px;
-    height: 84px;
+    top: 124px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .l-screen {
+    width: 34px;
+    height: 28px;
+    top: 16px;
+  }
+
+  .l-hose {
+    top: 146px;
+    height: 8px;
+  }
+
+  .l-hose.left {
+    left: 34px;
+    width: 64px;
+  }
+
+  .l-hose.right {
+    right: 34px;
+    width: 62px;
+  }
+
+  .l-leg {
+    height: 62px;
+    bottom: 34px;
+  }
+
+  .l-leg.left {
+    left: 66px;
+  }
+
+  .l-leg.right {
+    right: 66px;
+  }
+
+  .l-wheel {
+    width: 40px;
+    bottom: 20px;
+  }
+
+  .l-wheel.left {
+    left: 50px;
+  }
+
+  .l-wheel.right {
+    right: 50px;
+  }
+
+  .steps-list,
+  .contact-list {
+    gap: 12px;
+  }
+
+  .step-card,
+  .contact-list div {
+    padding: 14px 16px;
+  }
+
+  .step-number {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .premium-box h3 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .premium-points {
+    gap: 10px;
+  }
+
+  .cta-action {
+    justify-content: stretch;
+  }
+
+  .cta-action .btn {
+    width: 100%;
+  }
+
+  .contact-form {
+    gap: 14px;
+  }
+
+  .contact-form span {
+    font-size: 11px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 13px 14px;
+    border-radius: 14px;
   }
 
   .footer-inner {
@@ -1193,7 +1550,14 @@ textarea {
     justify-content: center;
     padding: 16px 0;
     text-align: center;
+    gap: 8px;
   }
+
+  .footer-tag {
+    font-size: 9px;
+    letter-spacing: 0.18em;
+  }
+}
   .header-logo-image-wrap {
   display: flex;
   align-items: center;

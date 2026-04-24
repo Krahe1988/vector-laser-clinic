@@ -1,6 +1,6 @@
 import './vector-site.css'
 import logoTopo from './assets/logo-topo.png'
-import logoCentro from './assets/logoC.png'
+import logoC from './assets/logoC.png'
 import ultraformerImg from './assets/ultraformer.png'
 import lavieenImg from './assets/lavieen.png'
 import logoHorizontal from './assets/logo-horizontal.png'
@@ -274,7 +274,7 @@ export default function App() {
                 <div className="mini-eyebrow"></div>
                 <div className="logo-stage">
                   <a href="#" className="header-logoC-image-wrap">
-  <img src={logoCentro} className="header-logoC-image" />
+  <img src={logoC} className="header-logoC-image" />
 </a>
                 </div>
               </div>

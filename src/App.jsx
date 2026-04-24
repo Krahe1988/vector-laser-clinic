@@ -1,6 +1,6 @@
 import './vector-site.css'
 import logoTopo from './assets/logo-topo.png'
-import logoC from './assets/logoC.PNG'
+import logoC from './assets/logocc.PNG'
 import ultraformerImg from './assets/ultraformer.png'
 import lavieenImg from './assets/lavieen.png'
 import logoHorizontal from './assets/logo-horizontal.PNG'

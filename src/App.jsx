@@ -1,9 +1,9 @@
 import './vector-site.css'
 import logoTopo from './assets/logo-topo.png'
-import logoC from './assets/logoC.png'
+import logoC from './assets/logoC.PNG'
 import ultraformerImg from './assets/ultraformer.png'
 import lavieenImg from './assets/lavieen.png'
-import logoHorizontal from './assets/logo-horizontal.png'
+import logoHorizontal from './assets/logo-horizontal.PNG'
 
 
 function LogoMark({ className = '' }) {

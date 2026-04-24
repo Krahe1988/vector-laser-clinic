@@ -140,7 +140,7 @@ function EquipmentCard({ name, subtitle, bullets, visual }) {
 }
 
 export default function App() {
-  const whatsappNumber = '5511999999999'
+  const whatsappNumber = '5511912457441'
   const whatsappMessage = encodeURIComponent(
     'Olá! Quero conhecer a locação dos equipamentos da Vector Laser Clinic.'
   )

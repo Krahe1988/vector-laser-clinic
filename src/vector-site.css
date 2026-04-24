@@ -102,14 +102,14 @@ textarea {
   display: flex;
   align-items: center;
   text-decoration: none;
-  max-width: 220px;
+  max-width: 280px;
   overflow: hidden;
   flex: 0 0 auto;
 }
 
 .header-logo-image {
-  height: 52px;
-  max-width: 210px;
+  height: 62px;
+  max-width: 280px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -1088,12 +1088,12 @@ textarea {
   }
 
   .header-logo-image-wrap {
-  max-width: 130px;
+  max-width: 180px;
 }
 
 .header-logo-image {
-  height: 36px;
-  max-width: 130px;
+  height: 46px;
+  max-width: 180px;
 }
   .header-inner .btn {
     min-width: 140px;

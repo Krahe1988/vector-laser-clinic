@@ -108,11 +108,17 @@ textarea {
 }
 
 .header-logo-image {
-  height: 62px;
+  height: 82px;
   max-width: 280px;
   width: auto;
   object-fit: contain;
   display: block;
+}
+.header-logoC-image {
+  height: 210px;       /* aumenta aqui */
+  max-width: 360px;    /* evita corte */
+  width: auto;
+  object-fit: contain;
 }
 
 .brand-inline,
@@ -1175,10 +1181,9 @@ textarea {
     padding: 18px;
   }
 
-  .logo-stage {
-    min-height: 180px;
-  }
-
+.logo-stage {
+  min-height: 180px;
+}
   .hero-symbol {
     width: 120px;
     height: 120px;

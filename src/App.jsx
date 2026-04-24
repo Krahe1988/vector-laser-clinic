@@ -1,5 +1,10 @@
 import './vector-site.css'
 import logoTopo from './assets/logo-topo.png'
+import logoCentro from './assets/logoC.png'
+import ultraformerImg from './assets/ultraformer.png'
+import lavieenImg from './assets/lavieen.png'
+import logoHorizontal from './assets/logo-horizontal.png'
+
 
 function LogoMark({ className = '' }) {
   return (
@@ -170,7 +175,13 @@ export default function App() {
         'Melhora definição de rosto, papada e contorno',
         'Tratamento valorizado por clínicas de alto padrão',
       ],
-      visual: <DeviceUltraformer />,
+      visual: (
+  <img 
+    src={ultraformerImg} 
+    alt="Ultraformer III" 
+    className="device-image"
+  />
+),
     },
     {
       name: 'Lavieen',
@@ -181,7 +192,14 @@ export default function App() {
         'Estimula colágeno com recuperação mais confortável',
         'Excelente complemento para protocolos premium',
       ],
-      visual: <DeviceLavieen />,
+      visual: (
+        <img 
+    src={lavieenImg} 
+    alt="Lavieen" 
+    className="device-image"
+  />
+),
+
     },
   ]
 
@@ -253,14 +271,16 @@ export default function App() {
           <div className="hero-brand-card">
             <div className="hero-brand-grid">
               <div className="logo-clean-card">
-                <div className="mini-eyebrow">Logo Clean</div>
+                <div className="mini-eyebrow"></div>
                 <div className="logo-stage">
-                  <LogoMark className="hero-symbol" />
+                  <a href="#" className="header-logoC-image-wrap">
+  <img src={logoCentro} className="header-logoC-image" />
+</a>
                 </div>
               </div>
 
               <div className="brand-dark-card">
-                <BrandLogo dark horizontal />
+                
                 <div className="brand-info-grid">
                   <div className="brand-info-box">
                     <div className="mini-eyebrow">Visual feminino</div>
@@ -323,8 +343,12 @@ export default function App() {
           <div className="premium-box">
             <div className="mini-eyebrow">Assinatura da marca</div>
             <div className="signature-box">
-              <BrandLogo dark horizontal />
-            </div>
+              <img 
+                  src={logoHorizontal} 
+                     alt="Vector Laser Clinic" 
+                      className="signature-logo"
+              />
+        </div>
             <h3>Sua clínica merece presença premium.</h3>
 
             <div className="premium-points">
@@ -381,7 +405,7 @@ export default function App() {
             </p>
 
             <div className="contact-list">
-              <div>📞 WhatsApp: (11) 99999-9999</div>
+              <div>📞 WhatsApp: (11) 91245-7441</div>
               <div>✉️ contato@vectorlaserclinic.com</div>
               <div>📍 Atendimento para clínicas e profissionais</div>
             </div>
@@ -400,7 +424,7 @@ export default function App() {
 
             <label>
               <span>Telefone</span>
-              <input type="text" placeholder="(11) 99999-9999" />
+              <input type="text" placeholder="(11) 91245-7441" />
             </label>
 
             <label>

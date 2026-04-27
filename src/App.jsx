@@ -432,9 +432,16 @@ export default function App() {
               <textarea rows="5" placeholder="Conte quais tecnologias você deseja oferecer na sua clínica." />
             </label>
 
-            <button type="button" className="btn btn-gold btn-full">
+            <a
+              className="btn btn-gold btn-full"
+                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                  'Olá! Vim pelo site da Vector Laser Clinic e gostaria de solicitar uma proposta para minha clínica.'
+           )}`}
+            target="_blank"
+                 rel="noreferrer"
+            >
               Enviar proposta
-            </button>
+          </a>
           </form>
         </div>
       </section>

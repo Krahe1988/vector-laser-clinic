@@ -145,6 +145,16 @@ function EquipmentCard({ name, subtitle, bullets, visual }) {
 }
 
 export default function App() {
+  const trackWhatsAppConversion = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-18123496224/GYUxCMDwm6QcEKC2-sFD',
+        value: 1.0,
+        currency: 'BRL',
+        transaction_id: '',
+      })
+    }
+  }
   const whatsappNumber = '5511912457441'
   const whatsappMessage = encodeURIComponent(
     'Olá! Quero conhecer a locação dos equipamentos da Vector Laser Clinic.'
@@ -176,12 +186,12 @@ export default function App() {
         'Tratamento valorizado por clínicas de alto padrão',
       ],
       visual: (
-  <img 
-    src={ultraformerImg} 
-    alt="Ultraformer III" 
-    className="device-image"
-  />
-),
+        <img
+          src={ultraformerImg}
+          alt="Ultraformer III"
+          className="device-image"
+        />
+      ),
     },
     {
       name: 'Lavieen',
@@ -193,12 +203,12 @@ export default function App() {
         'Excelente complemento para protocolos premium',
       ],
       visual: (
-        <img 
-    src={lavieenImg} 
-    alt="Lavieen" 
-    className="device-image"
-  />
-),
+        <img
+          src={lavieenImg}
+          alt="Lavieen"
+          className="device-image"
+        />
+      ),
 
     },
   ]
@@ -215,8 +225,8 @@ export default function App() {
       <header className="site-header">
         <div className="container header-inner">
           <a href="#" className="header-logo-image-wrap">
-  <img src={logoTopo} alt="Vector Laser Clinic" className="header-logo-image" />
-            </a>
+            <img src={logoTopo} alt="Vector Laser Clinic" className="header-logo-image" />
+          </a>
 
           <nav className="site-nav">
             <a href="#equipamentos">Equipamentos</a>
@@ -229,6 +239,7 @@ export default function App() {
             href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
             target="_blank"
             rel="noreferrer"
+            onClick={trackWhatsAppConversion}
           >
             WhatsApp
           </a>
@@ -250,6 +261,7 @@ export default function App() {
             <div className="hero-actions">
               <a
                 className="btn btn-gold"
+                onClick={trackWhatsAppConversion}
                 href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noreferrer"
@@ -274,13 +286,13 @@ export default function App() {
                 <div className="mini-eyebrow"></div>
                 <div className="logo-stage">
                   <a href="#" className="header-logoC-image-wrap">
-  <img src={logoC} className="header-logoC-image" />
-</a>
+                    <img src={logoC} className="header-logoC-image" />
+                  </a>
                 </div>
               </div>
 
               <div className="brand-dark-card">
-                
+
                 <div className="brand-info-grid">
                   <div className="brand-info-box">
                     <div className="mini-eyebrow">Visual feminino</div>
@@ -343,12 +355,12 @@ export default function App() {
           <div className="premium-box">
             <div className="mini-eyebrow">Assinatura da marca</div>
             <div className="signature-box">
-              <img 
-                  src={logoHorizontal} 
-                     alt="Vector Laser Clinic" 
-                      className="signature-logo"
+              <img
+                src={logoHorizontal}
+                alt="Vector Laser Clinic"
+                className="signature-logo"
               />
-        </div>
+            </div>
             <h3>Sua clínica merece presença premium.</h3>
 
             <div className="premium-points">
@@ -363,6 +375,7 @@ export default function App() {
               href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
               target="_blank"
               rel="noreferrer"
+              onClick={trackWhatsAppConversion}
             >
               Solicitar atendimento
             </a>
@@ -384,6 +397,7 @@ export default function App() {
           <div className="cta-action">
             <a
               className="btn btn-dark"
+              onClick={trackWhatsAppConversion}
               href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
               target="_blank"
               rel="noreferrer"
@@ -434,14 +448,15 @@ export default function App() {
 
             <a
               className="btn btn-gold btn-full"
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-                  'Olá! Vim pelo site da Vector Laser Clinic e gostaria de solicitar uma proposta para minha clínica.'
-           )}`}
-            target="_blank"
-                 rel="noreferrer"
+              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                'Olá! Vim pelo site da Vector Laser Clinic e gostaria de solicitar uma proposta para minha clínica.'
+              )}`}
+              target="_blank"
+              rel="noreferrer"
+              onClick={trackWhatsAppConversion}
             >
               Enviar proposta
-          </a>
+            </a>
           </form>
         </div>
       </section>

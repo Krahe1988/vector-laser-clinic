@@ -5,6 +5,9 @@ import ultraformerImg from './assets/ultraformer.png'
 import lavieenImg from './assets/lavieen.png'
 import logoHorizontal from './assets/logo-horizontal.PNG'
 
+import LandingLavieen from './LandingLavieen'
+
+
 
 function LogoMark({ className = '' }) {
   return (
@@ -145,6 +148,10 @@ function EquipmentCard({ name, subtitle, bullets, visual }) {
 }
 
 export default function App() {
+  if (window.location.pathname === '/lavieen') {
+    return <LandingLavieen />
+  }
+
   const trackWhatsAppConversion = () => {
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'conversion', {

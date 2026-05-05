@@ -470,7 +470,7 @@ export default function App() {
 
       <footer className="site-footer">
         <div className="container footer-inner">
-          <p>© 2026 Vector Laser Clinic. Todos os direitos reservados.</p>
+          <p>© 2026 Vector Laser Clinic CNPJ 66.535.551/0001-68. Todos os direitos reservados.</p>
           <p className="footer-tag">Tecnologia • Precisão • Beleza • Cuidado</p>
         </div>
       </footer>

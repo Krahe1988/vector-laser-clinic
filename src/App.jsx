@@ -4,8 +4,10 @@ import logoC from './assets/logocc.PNG'
 import ultraformerImg from './assets/ultraformer.png'
 import lavieenImg from './assets/lavieen.png'
 import logoHorizontal from './assets/logo-horizontal.PNG'
+import LandingLavieenConsumidor from './LandingLavieenConsumidor'
 
 import LandingLavieen from './LandingLavieen'
+import LandingLavieenFullFace from './LandingLavieenFullFace'
 
 
 
@@ -150,7 +152,14 @@ function EquipmentCard({ name, subtitle, bullets, visual }) {
 export default function App() {
   if (window.location.pathname === '/lavieen') {
     return <LandingLavieen />
+  } 
+  if (window.location.pathname === '/lavieenpromo') {
+  return <LandingLavieenConsumidor />
+}
+    if (window.location.pathname === '/lavieen-full-face') {
+    return <LandingLavieenFullFace />
   }
+  
 
   const trackWhatsAppConversion = () => {
     if (typeof window !== 'undefined' && window.gtag) {
